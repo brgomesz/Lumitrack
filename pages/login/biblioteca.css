@@ -1,0 +1,22 @@
+
+
+.borda-formulario{
+    width: 100%;
+    border: 0px solid white;
+    padding: 20px;
+    box-shadow: 0 5px 20px black;
+    background:grey;
+}
+
+.campo-formulario {
+   padding-top: 10px;
+}
+
+.selecao-input{
+    width: auto;
+}
+
+h2{
+   text-align: center;
+   padding-bottom: 10px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lumitrack | Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+
+
+                <div class="col">
+                    <ul>
+                        <li>
+                            <a href=""> Inicio</a>
+                        </li>
+                        <li>
+                            <a href=""> Lote </a>
+                        </li>
+                        <li>
+                            <a href=""> Ajuda</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="logo">
+                        <img src="images/lumilogo.png">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="conteiner">
+            <ol id="lotes" class="lote">
+            </ol>
+            <button class="botaoFlutuante fixed bottom right" onclick="novoLote()">+</button>
+        </div>
+    </main>
+</body>
+
+
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="home.css">
+
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
+
+<script src="inicializar-firebase.js"></script>
+<script src="home.js"></script>
+
+</html>

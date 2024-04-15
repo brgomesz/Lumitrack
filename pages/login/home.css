@@ -1,0 +1,123 @@
+body {
+    font-weight: 100;
+    background-image: url('images/background.png');
+}
+
+/* header{
+    max-height: 10px;
+} */
+
+nav {
+    background: rgb(255, 175, 33);
+    /* border-radius: 0 0 1rem 1rem; */
+    /* padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+
+    display: inline-block;
+    margin: 0 1rem;
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+}
+
+nav ul li a:after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-top: -3px;
+    transition: 0.7s;
+    border-radius: 500px;
+}
+
+nav ul li a:hover:after,
+nav ul li a.active:after {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.col {
+    width: 50%;
+    padding: 1rem;
+}
+
+.logo img {
+    display: flex;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+ol {
+    margin-top: 50px;
+}
+
+ol li {
+    cursor: pointer;
+    background: white;
+    padding: 8px 16px;
+    border: 1px grey solid;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
+ol li:hover {
+    opacity: 1;
+}
+
+ol li p {
+    margin: 6px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.botaoFlutuante {
+    width: 40px;
+    height: 40px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 500px;
+}
+
+button.botaoFlutuante.fixed {
+    position: fixed;
+}
+
+button.botaoFlutuante.bottom {
+    bottom: 32px;
+}
+
+button.botaoFlutuante.right {
+    right: 32px;
+}
+
+.botaoFlutuante:hover {
+    opacity: 0.8;
+}
+
+
+body{
+    color: black
+}

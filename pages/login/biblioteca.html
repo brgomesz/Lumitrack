@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lumitrack | Biblioteca</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+
+
+                <div class="col">
+                    <ul>
+                        <li>
+                            <a href=""> Inicio</a>
+                        </li>
+                        <li>
+                            <a href=""> Lote </a>
+                        </li>
+                        <li>
+                            <a href=""> Ajuda</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <div class="logo">
+                        <img src="images/lumilogo.png">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="centralizar">
+        <form>
+            <div class="borda-formulario">
+                <h2>Cadastro de lote</h2>
+
+                <div class="campo-formulario">
+                    <div><label>Tipo do lote</label></div>
+                    <input class="selecao-input" type="radio" name="type" checked id="embalado">
+                    <label for="loteApto">Com embalagem</label>
+                    <input class="selecao-input" type="radio" name="type" id="naoEmbalado">
+                    <label for="loteNaoApto">Sem embalagem</label>
+                </div>
+
+                <div class="campo-formulario">
+                    <div><label>Data de recebimento</label></div>
+                    <input type="date" name="type" id="data">
+                </div>
+
+                <div class="campo-formulario">
+                    <div><label>Cidade de origem</label></div>
+                    <input type="text" name="type" id="cidade">
+                </div>
+
+                <div class="campo-formulario">
+                    <div><label>Quantidade</label></div>
+                    <input type="number" name="type" id="quantidade">
+                </div>
+                <button class="clear">Cancelar</button>
+                <button class="solid" onclick="salvarLote()" id="botaoSalvar">Salvar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="biblioteca.css">
+
+
+<script src="loading.js"></script>
+<script src="inicializar-firebase.js"></script>
+<script src="biblioteca.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
+
+
+</html>
